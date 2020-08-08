@@ -13,8 +13,7 @@
             <div class="col-md-6">
                 <div class="pin-generator half-width">
                     <input id="random-number" value="" class="form-control" type="text">
-                    <button id="button" onclick="getElementById('random-number').value=getRndInteger()" class="generate-btn">Generate Pin</button>
-
+                    <div id="generate"><button id="button" class="generate-btn">Generate Pin</button></div>
                 </div>
             </div>			
             <div class="col-md-6">
@@ -43,7 +42,8 @@
                                 <div id="button" class="button"value="0" onclick="calculator.answer.value += '0'">0</div>
                                 <div class="button"value="c" onclick="calculator.answer.value = ' ' ">C</div>
                             </div>
-                            <h1 style="display: none"><span id="thisone">0</span></h1>
+                            <span id="thisone"> 0 </span> <!-- store here how many try -->
+                            
                             <div>
                                 <button  type="submit" id="submit_btn" class="submit-btn">Submit</button>
                                 <p id="action_left" class="action-left" >3 try left</p>
@@ -59,11 +59,7 @@
             <p id="match" class="notify match">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
+
 <script src="main.js"></script>
-
-
-
-
 </body>
 </html>
-

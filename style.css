@@ -105,6 +105,6 @@ color: #E0B612;
     margin-top: 10px;
 }
 
-.notmatch, .match{
+#thisone, .notmatch, .match{
     display: none;
 }
